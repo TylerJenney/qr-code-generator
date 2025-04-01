@@ -13,6 +13,7 @@ A simple Flask web application that generates QR codes from user input. The app 
 
 ### Option 1: Build Locally
 docker build -t qr-code-app .
+
 docker run -p 5000:5000 qr-code-app
 
 Then open your browser and go to:
