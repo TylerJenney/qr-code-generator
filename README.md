@@ -12,17 +12,21 @@ A simple Flask web application that generates QR codes from user input. The app 
 ## How to Run
 
 ### Option 1: Build Locally
-docker build -t qr-code-app .
 
+```bash
+docker build -t qr-code-app .
 docker run -p 5000:5000 qr-code-app
+
 
 Then open your browser and go to:
 http://localhost:5000
 
-### Option 2: Pull from Docker Hub
+
+Option 2: Pull from Docker Hub
+bash
+Copy
 docker run -p 5000:5000 tylerjenney/qr-code-app
 
-## Project Structure
 
 qr-code-generator/
 ├── app.py
@@ -32,11 +36,3 @@ qr-code-generator/
 │   └── index.html
 └── static/
     └── generated/
-
-## Stack
-
-- Python
-- Flask
-- qrcode
-- Pillow
-- Docker
